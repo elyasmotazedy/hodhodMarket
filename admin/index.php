@@ -20,24 +20,12 @@
 	];
 ?>
 
-    <div class="container-fliud" style="background-color: white">
+    <div class="container" style="background-color: white" >
 
-        <div class="row">
-            <span class="col-md-12">دسته بندی ها</span>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <span>دسته بندی کلی</span>
-                <select>
-
-					<?php foreach ($cat_main as $category): ?>
-						<option value="<?php echo $category['id']; ?>"><?php echo $category['category_name']; ?></option>
-					<?php endforeach; ?>
-
-                </select>
-            </div>
-            <div class="col-md-3">
-                <span>محصولات</span>
+        <div class="row text-center">
+            <p class="titleSec">فیلتر کردن دسته بندی ها</p>
+            <div class="col-md-6" style="padding: 50px">
+                <strong>محصولات</strong>
                 <select>
 
 					<?php foreach ($cat_sub1 as $category): ?>
@@ -46,14 +34,25 @@
 
                 </select>
             </div>
+            <div class="col-md-6" style="padding: 50px">
+                <strong>دسته بندی کلی</strong>
+                <select>
+
+                    <?php foreach ($cat_main as $category): ?>
+                        <option value="<?php echo $category['cat_id']; ?>"><?php echo $category['category_name']; ?></option>
+                    <?php endforeach; ?>
+
+                </select>
+            </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <div class=""><span >لیست پست ها</span></div>
 
+
+        <div class="row text-center">
+            <p class="titleSec">لیست پست ها</p>
+            <div class="col-md-12">
 				<?php foreach ($post_product as $product): ?>
-						<div class="card" style="display: inline !important">
+						<div class="card">
 		                    <h3><?php echo $product['pro_header']; ?></h3>
 		                    <span>دسته بندی:</span>
 		                    <span><?php echo $product['pro_cat']; ?></span>
