@@ -1,4 +1,16 @@
-
+<?php
+	session_start();
+	if (!isset($_SESSION['USERNAME'])) {
+		header('Location: login.php');
+		exit;
+	}
+	$sign = $_GET['sign'] ?? "";
+	if ($sign === "out") {
+		unset($_SESSION['USERNAME']);
+		header('Location: login.php');
+		exit;
+	}
+?>
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
@@ -17,7 +29,7 @@
     <link rel="stylesheet" href="../css/admin_style.css">
 
 </head>
-<body>
+<body style="overflow-y:scroll !important">
 	<nav class="navbar navbar-inverse">
  <div class="container-fluid">
    <div class="navbar-header">
@@ -37,8 +49,8 @@
 	   <li><a href="#">Rates: 13</a></li>
 	 </ul>
 	 <ul class="nav navbar-nav navbar-right">
-	   <li><a href="#"><span class="glyphicon glyphicon-user"></span> شهریار </a></li>
-	   <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> خروج </a></li>
+	   <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['USERNAME']; ?> </a></li>
+	   <li><a href="index.php?sign=out"><span class="glyphicon glyphicon-log-in"></span> خروج </a></li>
 	 </ul>
    </div>
  </div>

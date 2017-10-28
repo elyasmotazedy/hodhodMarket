@@ -1,4 +1,3 @@
-<?php include("../includes/section/admin_header.php"); ?>
 <?php
 	$cat_main = [
 		["cat_id"=>"1","category_name"=>"volvo"],
@@ -19,7 +18,7 @@
 		["pro_id"=>"4","cat_sub1_id"=>"1","pro_header"=>"hodhod","pro_cat"=>"عمومی","product"=>"چسب","price"=>"500","discount"=>"-","pro_brand"=>"لئوناردو","pro_weight"=>"30","pro_country"=>"آلمان"],
 	];
 ?>
-
+<?php include("../includes/section/admin_header.php"); ?>
     <div class="container" style="background-color: white" >
 
         <div class="row text-center">
