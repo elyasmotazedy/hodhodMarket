@@ -19,7 +19,7 @@
 	];
 ?>
 <?php include("../includes/section/admin_header.php"); ?>
-    <div class="container" style="background-color: white" >
+    <div class="container" style="background-color: white" dir="rtl">
 
         <div class="row text-center">
             <p class="titleSec">فیلتر کردن دسته بندی ها</p>
@@ -53,14 +53,14 @@
 				<?php foreach ($post_product as $product): ?>
 						<div class="card">
 		                    <h3><?php echo $product['pro_header']; ?></h3>
-		                    <span>دسته بندی:</span>
-		                    <span><?php echo $product['pro_cat']; ?></span>
-		                    <span>محصول:</span>
-		                    <span><?php echo $product['product']; ?></span>
+		                    <p class="title">دسته بندی:</p>
+		                    <p class="info"><?php echo $product['pro_cat']; ?></p>
+		                    <p class="title">محصول:</p>
+		                    <p class="info"><?php echo $product['product']; ?></p>
 		                    <p class="title">قیمت</p>
-		                    <span><?php echo $product['price']; ?></span>
+		                    <p class="info"><?php echo $product['price']; ?></p>
 		                    <p class="title">قیمت با تخفیف</p>
-		                    <span><?php echo $product['discount']; ?></span>
+		                    <p class="info"><?php echo $product['discount']; ?></p>
 		                    <p class="title">توضیحات اضافی</p>
 		                    <ul>
 		                        <li>برند : <?php echo $product['pro_brand']; ?></li>
