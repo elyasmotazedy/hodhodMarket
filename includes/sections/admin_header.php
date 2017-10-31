@@ -1,32 +1,20 @@
-<?php
-	session_start();
-	if (!isset($_SESSION['USERNAME'])) {
-		header('Location: login.php');
-		exit;
-	}
-	$sign = isset($_GET['sign']) ? $_GET['sign'] : "" ;
-	if ($sign === "out") {
-		unset($_SESSION['USERNAME']);
-		header('Location: login.php');
-		exit;
-	}
-?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Control Panel</title>
+	<title>مدیریت محتوا سایت</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- CSS -->
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="/hodhodMarket/css/bootstrap.css"; >
+	<link rel="stylesheet" type="text/css" href="/hodhodMarket/css/admin_style.css">
 
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="../css/admin_style.css">
+	<!-- jQuery -->
+	<script src="/hodhodMarket/js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<!-- JavaScript / bootstrap -->
+	<script src="/hodhodMarket/js/bootstrap.min.js"></script>
+	<script src="/hodhodMarket/js/admin_script.js"></script>
 
 </head>
 <body style="overflow-y:scroll !important">
@@ -52,7 +40,7 @@
      </ul>
 
 	 <ul class="nav navbar-nav navbar-right">
-	   <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['USERNAME']; ?> </a></li>
+	   <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php echo htmlspecialchars($_SESSION['USERNAME']); ?> </a></li>
 	   <li><a href="index.php?sign=out"><span class="glyphicon glyphicon-log-in"></span> خروج </a></li>
 	 </ul>
 

@@ -1,3 +1,17 @@
+<?php require("../includes/init.php"); ?>
+<?php
+	session_start();
+	if (!isset($_SESSION['USERNAME'])) {
+		header('Location: login.php');
+		exit;
+	}
+	$sign = isset($_GET['sign']) ? $_GET['sign'] : "";
+	if ($sign === "out") {
+		unset($_SESSION['USERNAME']);
+		header('Location: login.php');
+		exit;
+	}
+?>
 <?php
 	$cat_main = [
 		["cat_id"=>"1","category_name"=>"volvo"],
@@ -18,7 +32,7 @@
 		["pro_id"=>"4","cat_sub1_id"=>"1","pro_header"=>"hodhod","pro_cat"=>"عمومی","product"=>"چسب","price"=>"500","discount"=>"-","pro_brand"=>"لئوناردو","pro_weight"=>"30","pro_country"=>"آلمان"],
 	];
 ?>
-<?php include("../includes/section/admin_header.php"); ?>
+<?php include(SECTION_PATH."/admin_header.php"); ?>
     <div class="container" style="background-color: white" dir="rtl">
 
         <div class="row text-center">
@@ -73,6 +87,4 @@
             </div> <!-- col-md-12 -->
         </div><!-- end .row -->
     </div><!-- end .container -->
-
-</body>
-</html>
+<?php include(SECTION_PATH."/admin_footer.php"); ?>
