@@ -50,4 +50,59 @@ header{
     background-color: #df8e56;
 
 }
+
+.port-item1{
+    width: 30%;
+}
+.port-item2{
+    width: 70%;
+}
 /*header style*/
+
+
+
+@media (max-width: 576px) {
+    nav .container {
+        width: 100%;
+
+    }
+    .navbar-brand{
+       direction: ltr;
+       float: left;
+    }
+    .clear-both{
+        clear: both;
+    }
+}
+
+.slider {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
