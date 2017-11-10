@@ -20,14 +20,12 @@
         wrap:true
     });
     $(".center").slick({
-        dots: true,
         infinite: true,
-        centerMode: true,
-        slidesToShow: 5,
-        slidesToScroll: 3,
-        rtl:true
+        lazyLoad: 'ondemand',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        rtl:true,
     });
-
 
 
 </script>
