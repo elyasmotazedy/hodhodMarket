@@ -31,7 +31,7 @@ class DB {
     }
 
     public function close() {
-        $conn = null;
+        $this->conn = null;
     }
 
 }

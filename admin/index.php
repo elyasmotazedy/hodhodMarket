@@ -12,79 +12,27 @@
 		exit;
 	}
 ?>
-<?php
-	$cat_main = [
-		["cat_id"=>"1","category_name"=>"volvo"],
-		["cat_id"=>"2","category_name"=>"Saab"],
-		["cat_id"=>"3","category_name"=>"VW"],
-		["cat_id"=>"4","category_name"=>"Audi"],
-	];
-	$cat_sub1 = [
-		["cat_id"=>"1","cat_main"=>"1","category_name"=>"volvo"],
-		["cat_id"=>"2","cat_main"=>"1","category_name"=>"Saab"],
-		["cat_id"=>"3","cat_main"=>"3","category_name"=>"VW"],
-		["cat_id"=>"4","cat_main"=>"4","category_name"=>"Audi"],
-	];
-	$post_product = [
-		["pro_id"=>"1","cat_sub1_id"=>"2","pro_header"=>"hodhod","pro_cat"=>"لبنیات","product"=>"پنیر","price"=>"2000","discount"=>"1500","pro_brand"=>"لئوناردو","pro_weight"=>"420","pro_country"=>"ایران"],
-		["pro_id"=>"2","cat_sub1_id"=>"3","pro_header"=>"hodhod","pro_cat"=>"انجماد","product"=>"کالباس","price"=>"5000","discount"=>"4500","pro_brand"=>"لئوناردو","pro_weight"=>"105","pro_country"=>"ایران"],
-		["pro_id"=>"3","cat_sub1_id"=>"1","pro_header"=>"hodhod","pro_cat"=>"مصرفی","product"=>"مایغ ظرفشویی","price"=>"4000","discount"=>"3500","pro_brand"=>"لئوناردو","pro_weight"=>"710","pro_country"=>"ترکیه"],
-		["pro_id"=>"4","cat_sub1_id"=>"1","pro_header"=>"hodhod","pro_cat"=>"عمومی","product"=>"چسب","price"=>"500","discount"=>"-","pro_brand"=>"لئوناردو","pro_weight"=>"30","pro_country"=>"آلمان"],
-	];
-?>
 <?php include(SECTION_PATH."/admin_header.php"); ?>
-    <div class="container" style="background-color: white" dir="rtl">
 
-        <div class="row text-center">
-            <p class="titleSec">فیلتر کردن دسته بندی ها</p>
-            <div class="col-md-6" style="padding: 50px">
-                <strong>محصولات</strong>
-                <select>
-
-					<?php foreach ($cat_sub1 as $category): ?>
-						<option value="<?php echo $category['category_name']; ?>"><?php echo $category['category_name']; ?></option>
-					<?php endforeach ?>
-
-                </select>
-            </div>
-            <div class="col-md-6" style="padding: 50px">
-                <strong>دسته بندی کلی</strong>
-                <select>
-
-                    <?php foreach ($cat_main as $category): ?>
-                        <option value="<?php echo $category['cat_id']; ?>"><?php echo $category['category_name']; ?></option>
-                    <?php endforeach; ?>
-
-                </select>
-            </div>
-        </div>
-
-
-
-        <div class="row text-center">
-            <p class="titleSec">لیست پست ها</p>
-            <div class="col-md-12">
-				<?php foreach ($post_product as $product): ?>
-						<div class="card">
-		                    <h3><?php echo $product['pro_header']; ?></h3>
-		                    <p class="title">دسته بندی:</p>
-		                    <p class="info"><?php echo $product['pro_cat']; ?></p>
-		                    <p class="title">محصول:</p>
-		                    <p class="info"><?php echo $product['product']; ?></p>
-		                    <p class="title">قیمت</p>
-		                    <p class="info"><?php echo $product['price']; ?></p>
-		                    <p class="title">قیمت با تخفیف</p>
-		                    <p class="info"><?php echo $product['discount']; ?></p>
-		                    <p class="title">توضیحات اضافی</p>
-		                    <ul>
-		                        <li>برند : <?php echo $product['pro_brand']; ?></li>
-		                        <li>وزن (گرم) :<?php echo $product['pro_weight']; ?></li>
-		                        <li>کشور تولید کننده : <?php echo $product['pro_country']; ?></li>
-		                    </ul>
-		                </div><!-- end .card -->
-				<?php endforeach; ?>
-
-            </div> <!-- col-md-12 -->
-        </div><!-- end .row -->
-    </div><!-- end .container -->
+	<div class="container w-50">
+		<blockquote class="blockquote">
+			<p class="d-block text-center m-2 p-2">Welcome to <span class="font-italic">Admin Panel</span> <?php echo htmlspecialchars($_SESSION['USERNAME']); ?></p>
+		</blockquote>
+	</div>
+	<article>
+		<div class="container">
+			<h3 class="navbar-brand">Please Enter Your Product:</h3>
+			<ul class="navbar ml-4">
+				<li class="navbar-item">
+					<a class="navbar-link" href="<?php echo WWW_ROOT."/admin/product"; ?>">Product</a>
+				</li>
+				<li class="navbar-item">
+					<a class="navbar-link" href="<?php echo WWW_ROOT."/admin/category"; ?>">Category</a>
+				</li>
+				<li class="navbar-item">
+					<a class="navbar-link" href="<?php echo WWW_ROOT."/admin/sliders"; ?>">Sliders</a>
+				</li>
+			</ul>
+		</div>
+	</article>
 <?php include(SECTION_PATH."/admin_footer.php"); ?>

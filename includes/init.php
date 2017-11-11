@@ -20,8 +20,9 @@ define("ICON_PATH", dirname(PROJECT_PATH)."/icon");
 define("IMAGE_PATH", dirname(PROJECT_PATH)."/image");
 
 
-
-
+$file_correct = strpos($_SERVER["SCRIPT_NAME"],'/') + 13;
+$doc_root = substr( $_SERVER["SCRIPT_NAME"] , 0 ,  $file_correct);
+define( "WWW_ROOT" , $doc_root );
 
 require("functions.php");
 require("database.php");

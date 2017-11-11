@@ -44,4 +44,4 @@
 	</div>
 </body>
 </html>
-<?php $DB->colse(); ?>
+<?php $DB->close(); ?>
