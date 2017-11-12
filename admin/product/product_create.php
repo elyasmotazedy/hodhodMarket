@@ -70,7 +70,7 @@ if(isset($_POST["Creator"])) {
         <div class="form-group row">
             <label class="col-2 col-form-label" for="Expiration">Expiration Date</label>
                 <div class='input-group date col-10' id='datetimepicker2'>
-                    <input type='text' class="form-control" value="<?php echo date('Y-m-d'); ?>"  min="<?php echo date(Y-M-D); ?>"/>
+                    <input type='text' class="form-control" value="<?php echo date('Y-m-d'); ?>"  min="<?php echo date('Y-m-d'); ?>"/>
                     <span class="input-group-addon">
                         <i class="fa fa-calendar"></i>
                     </span>
