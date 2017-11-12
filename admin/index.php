@@ -24,13 +24,13 @@
 			<h3 class="navbar-brand">Please Enter Your Product:</h3>
 			<ul class="navbar ml-4">
 				<li class="navbar-item">
-					<a class="navbar-link" href="<?php echo WWW_ROOT."/admin/product"; ?>">Product</a>
+					<a class="navbar-link" href="<?php echo ADMIN_ROOT."/product"; ?>">Product</a>
 				</li>
 				<li class="navbar-item">
-					<a class="navbar-link" href="<?php echo WWW_ROOT."/admin/category"; ?>">Category</a>
+					<a class="navbar-link" href="<?php echo ADMIN_ROOT."/category"; ?>">Category</a>
 				</li>
 				<li class="navbar-item">
-					<a class="navbar-link" href="<?php echo WWW_ROOT."/admin/sliders"; ?>">Sliders</a>
+					<a class="navbar-link" href="<?php echo ADMIN_ROOT."/sliders"; ?>">Sliders</a>
 				</li>
 			</ul>
 		</div>
