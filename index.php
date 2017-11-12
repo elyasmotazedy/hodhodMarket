@@ -29,113 +29,30 @@
 
 </div>
 
+
 <section class="container mb-5">
-    <div class="card">
+    <div class="card ">
         <div class="card-header bg-warning text-white font-weight-bold">
-            <span>آخرین محصولات</span>
+            <span>محصولات پر فروش</span>
         </div>
-        <div class="center slider w-100 p-0 card-block m-0 text-center">
-            <div class="h-25">
-                <img src="image/delester.jpg" width="100" height="200">
-                <div class="card-block">
-                    <h6 class="card-title">دلستر</h6>
-                    <p class="card-text">1000 تومان</p>
-                    <a href="#" class="btn btn-danger">افزودن به سبد خرید</a>
-                </div>
-            </div>
-            <div class="h-25">
-                <img src="image/nokhod.jpg" width="100" height="200">
-                <div class="card-block">
-                    <h6 class="card-title">Card Title</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, perspiciatis.</p>
-                    <a href="#" class="btn btn-danger">Read More</a>
-                </div>
-            </div>
-            <div class="h-25">
-                <img src="image/pasta.jpg" width="100" height="200">
-                <div class="card-block">
-                    <h6 class="card-title">Card Title</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, perspiciatis.</p>
-                    <a href="#" class="btn btn-danger">Read More</a>
-                </div>
-            </div>
-            <div class="h-25">
-                <img src="image/rob.jpeg" width="100" height="200">
-                <div class="card-block">
-                    <h6 class="card-title">Card Title</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, perspiciatis.</p>
-                    <a href="#" class="btn btn-danger">Read More</a>
-                </div>
-            </div>
-            <div class="h-25">
-                <img src="image/zhele.jpg" width="100" height="200">
-                <div class="card-block">
-                    <h6 class="card-title">Card Title</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, perspiciatis.</p>
-                    <a href="#" class="btn btn-danger">Read More</a>
-                </div>
-            </div>
-            <div class="h-25">
-                <img src="image/soop.png" width="100" height="200">
-                <div class="card-block">
-                    <h6 class="card-title">Card Title</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, perspiciatis.</p>
-                    <a href="#" class="btn btn-danger">Read More</a>
-                </div>
-            </div>
-            <div class="h-25">
-                <img src="image/pofak.jpg" width="100" height="200">
-                <div class="card-block">
-                    <h6 class="card-title">پفک چی توز</h6>
-                    <p class="card-text">1000 تومان</p>
-                    <a href="#" class="btn btn-danger">افزودن به سبد خرید</a>
-                </div>
-            </div>
-            <div class="h-25">
-                <img src="image/biogelz.jpg" width="100" height="200">
-                <div class="card-block">
-                    <h6 class="card-title">Card Title</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, perspiciatis.</p>
-                    <a href="#" class="btn btn-danger">Read More</a>
-                </div>
+        <div class="center slider w-100 p-0 card-block">
+            <div class="main-carousel"
+                 data-flickity='{ "cellAlign": "left", "contain": true }'>
+                <div class="carousel-cell"><img src="image/biogelz.jpg" alt="aks" width="300" height="300"></div>
+                <div class="carousel-cell"><img src="image/labani.jpg" alt=""  width="300" height="300"></div>
+                <div class="carousel-cell"><img src="image/zhele.jpg" alt=""  width="300" height="300"></div>
+                <div class="carousel-cell"><img src="image/soop.png" alt=""  width="300" height="300"></div>
+                <div class="carousel-cell"><img src="image/nokhod.jpg" alt=""  width="300" height="300"></div>
+                <div class="carousel-cell"><img src="image/soop.png" alt=""  width="300" height="300"></div>
+                <div class="carousel-cell"><img src="image/labani.jpg" alt=""  width="300" height="300"></div>
+                <div class="carousel-cell"><img src="image/biogelz.jpg" alt="aks" width="300" height="300"></div>
+                <div class="carousel-cell"><img src="image/soop.png" alt=""  width="300" height="300"></div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="container mb-5">
-    <div class="card">
-        <div class="card-header bg-warning text-white font-weight-bold">
-            <span>محصولات پر فروش</span>
-        </div>
-        <div class="center slider w-100 p-0 card-block">
-            <div>
-                <img src="image/delester.jpg" width="300" height="200">
-            </div>
-            <div>
-                <img src="image/nokhod.jpg" width="300" height="200">
-            </div>
-            <div>
-                <img src="image/pasta.jpg" width="300" height="200">
-            </div>
-            <div>
-                <img src="image/rob.jpeg" width="300" height="200">
-            </div>
-            <div>
-                <img src="image/zhele.jpg" width="300" height="200">
-            </div>
-            <div>
-                <img src="image/soop.png" width="300" height="200">
-            </div>
-            <div>
-                <img src="image/pofak.jpg" width="300" height="200">
-            </div>
-            <div>
-                <img src="image/biogelz.jpg" width="300" height="200">
-            </div>
-        </div>
-    </div>
-</section>
+
 
 
 <section class="container mb-5">
@@ -148,4 +65,9 @@
         </div>
     </div>
 </section>
+
+
+
+
+
 <?php include(SECTION_PATH."/footer.php"); ?>

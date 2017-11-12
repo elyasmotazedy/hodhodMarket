@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="/hodhodMarket/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <!-- CSS -->
+
+<!--    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">-->
+    <link rel="stylesheet" href="/hodhodMarket/css/flickity.css" media="screen">
+    <link href="http://code.gijgo.com/1.6.1/css/gijgo.css" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" type="text/css" href="/hodhodMarket/css/style.css">
 
 </head>
@@ -33,8 +35,8 @@
             <div class="col-md-10">
                 <div class="row m-3">
                     <div class="col-md-6">
-                        <a href="#" class="btn btn-warning btn-sm ml-3" data-toggle="modal" data-target="#addUserModal">ورود</a>
-                        <a href="#" class="btn btn-outline-warning btn-sm">ثبت نام</a>
+                        <a href="#" class="btn btn-warning btn-sm ml-3 pb-2 w-25" data-toggle="modal" data-target="#addUserModal">ورود</a>
+                        <a href="#" class="btn btn-outline-warning btn-sm pb-2 w-25">ثبت نام</a>
                     </div>
                     <div class="col-md-6">
                         <a href="#" class="btn btn-warning rounded-0">سبد خردید 0
