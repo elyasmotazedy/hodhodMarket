@@ -33,14 +33,16 @@ if(isset($_POST["Creator"])) {
         </div>
         <div class="form-group row">
             <label class="col-2 col-form-label" for="price">Price</label>
-            <div class="col-10">
+            <div class="input-group col-10">
                 <input class="form-control" type="number" name="price" placeholder="Yout Price" id="price" >
+                <span class="input-group-addon">تومان</span>
             </div>
         </div>
         <div class="form-group row">
             <label class="col-2 col-form-label" for="discount">Discount</label>
-            <div class="col-10">
+            <div class="input-group col-10">
                 <input class="form-control" type="number" name="discount" placeholder="Your Discount" id="discount" />
+                <span class="input-group-addon">تومان</span>
             </div>
         </div>
         <div class="form-group row">
@@ -51,10 +53,29 @@ if(isset($_POST["Creator"])) {
         </div>
         <div class="form-group row">
             <label class="col-2 col-form-label" for="weight">Weight</label>
-            <div class="col-10">
+            <div class="input-group col-10">
                 <input class="form-control" type="text" name="weight" id="weight" placeholder="Product Weight">
+                <span class="input-group-addon">kg</span>
             </div>
         </div>
+        <div class="form-group row">
+            <label class="col-2 col-form-label" for="date-product">Product Date</label>
+            <div class='input-group date col-10' id='datetimepicker1'>
+                <input type='text' class="form-control" value="<?php echo date('Y-m-d'); ?>" />
+                <span class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-2 col-form-label" for="Expiration">Expiration Date</label>
+                <div class='input-group date col-10' id='datetimepicker2'>
+                    <input type='text' class="form-control" value="<?php echo date('Y-m-d'); ?>"  min="<?php echo date(Y-M-D); ?>"/>
+                    <span class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                    </span>
+                </div>
+            </div>
         <div class="form-group row">
             <label class="col-2 col-form-label" for="description">Description</label>
             <div class="col-10">
@@ -62,9 +83,9 @@ if(isset($_POST["Creator"])) {
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-2 col-form-label" for="Image">Image Prodcut</label>
-            <div class="col-10">
-                <input class="form-control" type="file" name="image" id="Image"/>
+            <label class="col-2 col-form-label btn btn-success" for="Image">Image Prodcut</label>
+            <div class="bg-faded col-10">
+                <input style="display:none" class="form-control" type="file" name="image" id="Image"/>
             </div>
         </div>
         <div class="form-group row text-right">
