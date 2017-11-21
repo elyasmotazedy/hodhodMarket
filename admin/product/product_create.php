@@ -76,11 +76,11 @@ if(isset($_POST["Creator"])) {
                 <textarea class="form-control" id="description" name="description" rows="12" cols="100"></textarea>
             </div>
         </div>
-        <div class="form-group row">
-            <label class="col-2 col-form-label btn btn-success" for="Image">Image Prodcut</label>
-            <div class="bg-faded col-10">
-                <input style="display:none" class="form-control" type="file" name="image" id="Image"/>
-            </div>
+        <div class="form-group row col-lg-12 col-md-6 col-sm-3">
+            <label class="custom-file">Image Product
+                <input type="file" id="file" class="custom-file-input" name="image">
+                <span class="custom-file-control"></span>
+            </label>
         </div>
         <div class="form-group row text-right">
             <button class="form-control btn btn-primary col-2 my-4" type="submit" name="Creator">Create</button>

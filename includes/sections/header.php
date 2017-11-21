@@ -34,39 +34,37 @@
             </div>
             <div class="col-md-10">
                 <div class="row m-3">
-                    <div class="col-md-6">
+                    <div class="col-md-6 pt-2">
+                        <br>
                         <a href="#" class="btn btn-warning btn-sm ml-3 pb-2 w-25" data-toggle="modal" data-target="#addUserModal">ورود</a>
                         <a href="#" class="btn btn-outline-warning btn-sm pb-2 w-25">ثبت نام</a>
                     </div>
-                    <div class="col-md-6">
-                        <a href="#" class="btn btn-warning rounded-0">سبد خردید 0
-                            <a href="#" class="btn rounded-0 text-white" style="background-color: #ea8c00">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </a>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                     <div class="col-md-12">
-                        <div class="input-group">
-                            <input type="text" class="form-control rounded-0" placeholder="جستوجو ...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-warning rounded-0" type="button">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
-                                </button>
-                            </span>
+                    <div class="col-md-6 pt-4">
+                        <div data-toggle="tooltip" data-placement="top" title="تماس با ما" class="bg-warning text-white d-inline-block" style="width: 50px;height: 50px;border-radius: 50%;line-height: 60px;">
+                            <a class="text-white" href="#"><i class="fa fa-phone fa-2x"></i></a>
+                        </div>
+                        <div data-toggle="tooltip" data-placement="top" title="خانه" class="bg-warning text-white d-inline-block" style="width: 50px;height: 50px;border-radius: 50%;line-height: 60px;">
+                            <a class="text-white" href="#"><i class="fa fa-home fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
 
 </header>
 
+<!--BRAND NAME-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center p-3" style="background-color:rgba(255,189,96,0.17)">
+            <img class="hodhodName" src="image/hodhodname.png" alt="hodhod market "  width="50%" height="80">
+        </div>
+    </div>
+</div>
+
 <!-- NAVBAR SECTION -->
 
-<nav class="navbar navbar-toggleable navbar-inverse bg-warning ">
+<nav class="navbar navbar-toggleable navbar-inverse bg-warning sticky-top">
     <div class="container">
         <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -84,7 +82,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown">خشک اساسی و کنسرو </a>
-                    <div class="dropdown-menu text-center">
+                    <div class="dropdown-menu text-center bg-warning border-right-0 border-left-0">
                         <a href="#" class="dropdown-item">ادویه و چاشنی</a>
                         <a href="#" class="dropdown-item">کنسرو و کمپوت</a>
                         <a href="#" class="dropdown-item">رب و سس</a>
