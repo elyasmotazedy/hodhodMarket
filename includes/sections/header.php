@@ -57,7 +57,10 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center p-3" style="background-color:rgba(255,189,96,0.17)">
+            <img class="ml-3" src="image/autumn.png" alt="hodhod market " width="70" height="70">
             <img class="hodhodName" src="image/hodhodname.png" alt="hodhod market "  width="50%" height="80">
+            <img class="mr-3" src="image/autumn.png" alt="hodhod market " width="70" height="70">
+
         </div>
     </div>
 </div>

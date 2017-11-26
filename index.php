@@ -38,55 +38,55 @@
         <div class="center slider w-100 p-0 card-block ">
             <div class="main-carousel text-center font-weight-bold" data-flickity='{ "cellAlign": "left", "contain": true }'>
                 <div class="carousel-cell">
-                    <img src="image/biogelz.jpg" alt="aks" width="170" height="170">
+                    <a href="#"><img src="image/biogelz.jpg" alt="aks" width="170" height="170"></a>
                     <p>چیپس</p>
                     <p>1000 تومان</p>
                     <p>500 تومان</p>
                 </div>
                 <div class="carousel-cell">
-                    <img src="image/labani.jpg" alt=""  width="170" height="170">
+                    <a href="#"><img src="image/labani.jpg" alt=""  width="170" height="170"></a>
                     <p>پودر ژله پرتقالی</p>
                     <p>1000 تومان</p>
                     <p>&nbsp;</p>
                 </div>
                 <div class="carousel-cell">
-                    <img src="image/zhele.jpg" alt=""  width="170" height="170">
+                    <a href="#"><img src="image/zhele.jpg" alt=""  width="170" height="170"></a>
                     <p>پودر ژله پرتقالی</p>
                     <p>1000 تومان</p>
                     <p>&nbsp;</p>
                 </div>
                 <div class="carousel-cell">
-                    <img src="image/soop.png" alt=""  width="170" height="170">
+                    <a href="#"><img src="image/soop.png" alt=""  width="170" height="170"></a>
                     <p>پودر ژله پرتقالی</p>
                     <p>1000 تومان</p>
                     <p>&nbsp;</p>
                 </div>
                 <div class="carousel-cell">
-                    <img src="image/nokhod.jpg" alt=""  width="170" height="170">
+                    <a href="#"><img src="image/nokhod.jpg" alt=""  width="170" height="170"></a>
                     <p>پودر ژله پرتقالی</p>
                     <p>1000 تومان</p>
                     <p>&nbsp;</p>
                 </div>
                 <div class="carousel-cell">
-                    <img src="image/soop.png" alt=""  width="170" height="170">
+                    <a href="#"><img src="image/soop.png" alt=""  width="170" height="170"></a>
                     <p>پودر ژله پرتقالی</p>
                     <p>1000 تومان</p>
                     <p>&nbsp;</p>
                 </div>
                 <div class="carousel-cell">
-                    <img src="image/labani.jpg" alt=""  width="170" height="170">
+                    <a href="#"><img src="image/labani.jpg" alt=""  width="170" height="170"></a>
                     <p>پودر ژله پرتقالی</p>
                     <p>1000 تومان</p>
                     <p>&nbsp;</p>
                 </div>
                 <div class="carousel-cell">
-                    <img src="image/biogelz.jpg" alt="aks" width="170" height="170">
+                    <a href="#"><img src="image/biogelz.jpg" alt="aks" width="170" height="170"></a>
                     <p>پودر ژله پرتقالی</p>
                     <p>1000 تومان</p>
                     <p>&nbsp;</p>
                 </div>
                 <div class="carousel-cell">
-                    <img src="image/soop.png" alt=""  width="170" height="170">
+                    <a href="#"><img src="image/soop.png" alt=""  width="170" height="170"></a>
                     <p>پودر ژله پرتقالی</p>
                     <p>1000 تومان</p>
                     <p>&nbsp;</p>
@@ -149,14 +149,14 @@
 
 
 
+
 <div class="fixed-bottom bg-warning  m-3 text-center text-white" style="width: 115px;height: 115px;border-radius: 50%;">
     <p class="mt-2 font-weight-bold">سبد خرید</p>
     <i class="fa fa-shopping-cart text-white align-middle fa-3x" style="margin-top: -10px"></i>
     <p>0</p>
 </div>
-<div class="fixed-bottom bg-warning text-center text-white" style="width: 75px;height: 75px;border-radius: 50%;margin-bottom: 135px;margin-right: 35px;">
-    <p class="mt-2 font-weight-bold">جستجو</p>
-    <i class="fa fa-search text-white align-middle fa-2x" style="margin-top: -25px"></i>
+<div class="fixed-bottom bg-warning text-center text-white" style="width: 75px;height: 75px;border-radius: 50%;margin-bottom: 135px;margin-right: 35px;line-height: 70px">
+    <i class="fa fa-search text-white align-middle fa-2x"></i>
 </div>
 
 

@@ -7,7 +7,7 @@ a:hover{
 }
 
 body{
-background-color: #f1f1f1;
+    background-color: #f1f1f1;
 }
 /*header style*/
 header{
@@ -60,6 +60,9 @@ nav{
 .port-item2{
     width: 70%;
 }
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 /*header style*/
 
 
@@ -71,6 +74,7 @@ nav{
 .carousel-cell:nth-child(even){
     background-color: rgba(237,175,81,0.49);
 }
+
 
 /*index style*/
 
