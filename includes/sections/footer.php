@@ -40,6 +40,11 @@
     });
 
 
+    $( "#searchBtn" ).click(function() {
+            $('#searchProduct').toggleClass( "searchToggle" );
+
+    });
+
 
 </script>
 

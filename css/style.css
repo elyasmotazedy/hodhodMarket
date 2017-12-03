@@ -75,12 +75,21 @@ nav{
 .carousel-cell:nth-child(even){
     background-color: rgba(237,175,81,0.49);
 }
+.ee{
+    margin-bottom: 215px !important;
+    margin-right: -270px !important;
 
-
+}
+.searchToggle{
+    margin-right: 270px !important;
+    transition: all .7s !important;
+}
+#searchBtn{
+    cursor: pointer;
+}
 /*index style*/
 
 .bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}
-
 
 
 @media (max-width: 576px) {

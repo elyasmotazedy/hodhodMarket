@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/hodhodMarket/css/flickity.css" media="screen">
     <link href="http://code.gijgo.com/1.6.1/css/gijgo.css" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" type="text/css" href="/hodhodMarket/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
@@ -36,7 +36,7 @@
                 <div class="row m-3">
                     <div class="col-md-6 pt-2">
                         <br>
-                        <a href="#" class="btn btn-warning btn-sm ml-3 pb-2 w-25" data-toggle="modal" data-target="#addUserModal">ورود</a>
+                        <a href="#" class="btn btn-warning btn-sm ml-3 pb-2 w-25" data-toggle="modal" data-target="#sign-in">ورود</a>
                         <a href="#" class="btn btn-outline-warning btn-sm pb-2 w-25">ثبت نام</a>
                     </div>
                     <div class="col-md-6 pt-4">
@@ -123,7 +123,7 @@
 
 <!-- LOGIN MODAL -->
 
-<div class="modal fade" id="addUserModal">
+<div class="modal fade" id="sign-in">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header bg-warning text-white">
