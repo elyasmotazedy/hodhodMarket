@@ -1,5 +1,8 @@
 <?php require_once("includes/init.php"); ?>
+<?php session_start(); ?>
 <?php include(SECTION_PATH."/header.php"); ?>
+
+
 <div class="container my-5">
     <!-- SLIDER WITH INDICATORS -->
     <div id="slider3" class="carousel slide" data-ride="carousel">

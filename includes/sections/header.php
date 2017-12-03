@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <title>فروشگاه هدهد</title>
+    <title><?php echo $user ?? "فروشگاه هدهد"; ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Online Hyper Market">
     <meta name="keywords" content="hyper market">
     <meta name="author" content="Elyas Poor Motazedy & shahriyar tarnasi">
-
+    <link rel="icon" href="<?php echo htmlspecialchars(IMAGE_ROOT."/logo.png"); ?>">
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/hodhodMarket/css/font-awesome.min.css">
 
 <!--    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">-->
-    <link rel="stylesheet" href="/hodhodMarket/css/flickity.css" media="screen">
+    <link rel="stylesheet" href="<?php echo htmlspecialchars(CSS_ROOT."/flickity.css"); ?>" media="screen">
     <link href="http://code.gijgo.com/1.6.1/css/gijgo.css" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars(CSS_ROOT."/style.css"); ?>">
+    <script src="<?php echo htmlspecialchars(JS_ROOT."/hodhod_script.js"); ?>"></script>
 
 </head>
 
@@ -30,21 +30,21 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-md-2 col-sm-2 p-3 text-center">
-                <img src="image/logo.png" alt="logo" width="100" height="100">
+                <img src="<?php echo htmlspecialchars(IMAGE_ROOT."/logo.png"); ?>" alt="logo" width="100" height="100">
             </div>
             <div class="col-md-10">
                 <div class="row m-3">
                     <div class="col-md-6 pt-2">
                         <br>
-                        <a href="#" class="btn btn-warning btn-sm ml-3 pb-2 w-25" data-toggle="modal" data-target="#sign-in">ورود</a>
-                        <a href="#" class="btn btn-outline-warning btn-sm pb-2 w-25">ثبت نام</a>
+                        <a href="javascript:void(0)" class="btn btn-warning btn-sm ml-3 pb-2 w-25" data-toggle="modal" data-target="#sign-in">ورود</a>
+                        <a href="<?php echo htmlspecialchars(WWW_ROOT."/sign-up.php"); ?>" class="btn btn-outline-warning btn-sm pb-2 w-25">ثبت نام</a>
                     </div>
                     <div class="col-md-6 pt-4">
                         <div data-toggle="tooltip" data-placement="top" title="تماس با ما" class="bg-warning text-white d-inline-block" style="width: 50px;height: 50px;border-radius: 50%;line-height: 60px;">
                             <a class="text-white" href="#"><i class="fa fa-phone fa-2x"></i></a>
                         </div>
                         <div data-toggle="tooltip" data-placement="top" title="خانه" class="bg-warning text-white d-inline-block" style="width: 50px;height: 50px;border-radius: 50%;line-height: 60px;">
-                            <a class="text-white" href="#"><i class="fa fa-home fa-2x"></i></a>
+                            <a class="text-white" href="<?php echo htmlspecialchars(WWW_ROOT); ?>"><i class="fa fa-home fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
@@ -57,9 +57,9 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center p-3" style="background-color:rgba(255,189,96,0.17)">
-            <img class="ml-3" src="image/autumn.png" alt="hodhod market " width="70" height="70">
-            <img class="hodhodName" src="image/hodhodname.png" alt="hodhod market "  width="50%" height="80">
-            <img class="mr-3" src="image/autumn.png" alt="hodhod market " width="70" height="70">
+            <img class="ml-3" src="<?php echo htmlspecialchars(IMAGE_ROOT."/autumn.png"); ?>" alt="hodhod market " width="70" height="70">
+            <img class="hodhodName" src="<?php echo htmlspecialchars(IMAGE_ROOT."/hodhodname.png"); ?>" alt="hodhod market "  width="50%" height="80">
+            <img class="mr-3" src=<?php echo htmlspecialchars(IMAGE_ROOT."/autumn.png"); ?>" alt="hodhod market " width="70" height="70">
 
         </div>
     </div>
@@ -72,7 +72,7 @@
         <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a  href="#" class="navbar-brand">هد هد مارکت</a>
+        <a  href="<?php echo htmlspecialchars(WWW_ROOT); ?>" class="navbar-brand">هد هد مارکت</a>
         <div class="clear-both collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
@@ -122,7 +122,20 @@
 
 
 <!-- LOGIN MODAL -->
-
+<?php
+    $login_user = $DB->query("SELECT * FROM hodhod_users");
+    if( isset($_POST["btn"])  && $_SERVER['REQUEST_METHOD'] == 'POST')
+    {
+        $user = test_input($_POST['uname']);
+        $pass = test_input($_POST['upass']);
+                
+        foreach ($login_user as $row) {
+            if ( ($user === $row['user_name'] || $user === $row['user_email'] ) && ($pass.toString() === $row['user_password'])) {
+                $_SESSION["USERNAME"] = $user;
+            }
+        }
+    }
+?>
 <div class="modal fade" id="sign-in">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -132,23 +145,23 @@
                     <span>&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                <form>
+            
+            <form action="http://google.com" method="POST">
+                <div class="modal-body">
                     <div class="form-group">
                         <label for="email" class="form-control-label">ایمیل:</label>
-                        <input type="email" class="form-control" id="email">
+                        <input type="email" class="form-control" id="email" name="uname">
                     </div>
                     <div class="form-group">
                         <label for="password" class="form-control-label">رمز ورود:</label>
-                        <input type="password" class="form-control" id="password">
+                        <input type="password" class="form-control" id="password" name="upass">
                     </div>
-
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" data-dismiss="modal">بستن</button>
-                <button class="btn btn-warning" data-dismiss="modal">ورود</button>
-            </div>
+                </div>
+                <div class="modal-footer">
+                    <button style="width:15%;cursor:pointer;" class="btn btn-secondary pb-2" data-dismiss="modal">بستن</button>
+                    <input style="width:15%;cursor:pointer;" type="submit" class="btn btn-warning mr-2 pb-2" data-dismiss="modal" name="btn" value="ورود">
+                </div>
+            </form>
         </div>
     </div>
 </div>

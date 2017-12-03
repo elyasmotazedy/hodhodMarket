@@ -11,12 +11,14 @@ define("USER_PATH", dirname(PROJECT_PATH)."/user");
 
 
 $file_correct = strpos($_SERVER["SCRIPT_NAME"],'/') + 13;
-
 $doc_root = substr( $_SERVER["SCRIPT_NAME"] , 0 ,  $file_correct);
-define( "WWW_ROOT" , $doc_root );
-define( "ADMIN_ROOT" , WWW_ROOT.'/admin' );
+
+define( "WWW_ROOT" , $doc_root ); // Root URL :hoohoodMarket.ir/
+define( "ADMIN_ROOT" , WWW_ROOT.'/admin' ); 
 define( "IMAGE_ROOT" , WWW_ROOT.'/image' );
 define( "ICON_ROOT"  , WWW_ROOT.'/icon' );
+define( "CSS_ROOT"  , WWW_ROOT.'/css' );
+define( "JS_ROOT"  , WWW_ROOT.'/js' );
 
 require("functions.php");
 require("database.php");

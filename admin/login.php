@@ -7,15 +7,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>صفحه ورود شما</title>
-	<link rel="stylesheet" href="/hodhodMarket/css/bootstrap.css"; >
-	<link rel="stylesheet" type="text/css" href="/hodhodMarket/css/admin_style.css">
+	<link rel="stylesheet" href="<?php test_input(CSS_ROOT."/bootstrap.css") ?>"; >
+	<link rel="stylesheet" type="text/css" href="<?php test_input(CSS_ROOT."/admin_style.css"); ?>">
 
 	<!-- jQuery -->
-	<script src="/hodhodMarket/js/jquery.min.js"></script>
+	<script src="<?php test_input(JS_ROOT."/jquery.min.js") ?>"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<!-- JavaScript / bootstrap -->
-	<script src="/hodhodMarket/js/bootstrap.min.js"></script>
-	<script src="/hodhodMarket/js/admin_script.js"></script>
+	<script src="<?php test_input(JS_ROOT."/bootstrap.min.js") ?>"></script>
+	<script src="<?php test_input(JS_ROOT."/admin_script.js") ?>"></script>
 
 </head>
 <body>

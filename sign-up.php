@@ -1,4 +1,5 @@
 <?php require_once("includes/init.php"); ?>
+<?php session_start(); ?>
 <?php include(SECTION_PATH."/header.php"); ?>
 
 
